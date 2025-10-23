@@ -5,12 +5,8 @@ import Header from './components/Header.vue';
 <template>
 <Header/>
 
-<h1 class="title">hola soy facu</h1>
 </template>
 
 <style scoped>
-.title {
-  color: red;
-  text-align: center;
-}
+
 </style>
