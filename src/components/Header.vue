@@ -8,9 +8,10 @@
         </div>
 
         <nav class="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Productos</a>
-            <a href="#">Contactos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#que-hacemos">Que hacemos</a>
+            <a href="#por-que-contratarnos">Por que contratarnos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
 
     </header>
@@ -28,7 +29,6 @@
             align-items: center;
             background-color: #f7f6f2;
             padding: 15px 60px;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .logo-container img {
@@ -45,7 +45,6 @@
             background: none;
             box-shadow: none;
         }
-
 
         .nav-links a:hover {
             color:#6b6b6b;
