@@ -4,7 +4,9 @@
 <template>
     <header class="main-header">
         <div class="logo-container">
-            <img :src="logoimg" alt="logo"/>
+            <a href="#inicio">
+                <img :src="logoimg" alt="logo"/>
+            </a>
         </div>
 
         <nav class="nav-links">

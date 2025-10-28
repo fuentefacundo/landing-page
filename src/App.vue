@@ -2,12 +2,18 @@
 import Header from './components/Header.vue';
 import arrowLeft from './assets/iconleft.png';
 import arrowRight from './assets/iconright.png';
+import LogoMain from './assets/logo-inicio.png'
 </script>
 
 <template>
 <Header/>
 
-<main class="main-content">
+    <main class="main-content">
+        <section id="inicio" class="inicio-section">
+            <img :src="LogoMain" alt="Logo Grande" class="logo-inicio" />
+            <h2 class="marketing-texto">MARKETING</h2>
+        </section>
+
     
     <section id="nosotros" class="section">
         <div class="right">
@@ -45,7 +51,7 @@ import arrowRight from './assets/iconright.png';
 
 <style scoped>
     .main-content {
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .section {
@@ -82,6 +88,29 @@ import arrowRight from './assets/iconright.png';
         width: 29px;
         height: 29px;
         margin: 12px;
+    }
+    
+    .inicio-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
+
+    .logo-inicio {
+        max-width: 600px;
+        width: 80%;
+    }
+
+    .marketing-texto{
+        position: relative;
+        bottom: 12px;
+        right:  210px;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
 </style>
