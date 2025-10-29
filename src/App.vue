@@ -2,7 +2,12 @@
 import Header from './components/Header.vue';
 import arrowLeft from './assets/iconleft.png';
 import arrowRight from './assets/iconright.png';
-import LogoMain from './assets/logo-inicio.png'
+import LogoMain from './assets/logo-inicio.png';
+import grupoFacu from './assets/facu-group.png';
+import grupoJusti from './assets/justi-group.png';
+function buttonInfo (message) {
+    alert(message);
+}
 </script>
 
 <template>
@@ -20,6 +25,17 @@ import LogoMain from './assets/logo-inicio.png'
             <img :src="arrowLeft" alt="iconleft"/>
             <h2>Nosotros</h2>
         </div>
+            <div class="person">
+                <div class="group-facu">
+                    <button class="button-info" @click="buttonInfo('Hola soy facundo bal bla bla bla')">Click para saber más de Facu</button>
+                    <img :src="grupoFacu" alt="fachero" />
+                </div>
+
+                <div class="group-justi">
+                    <img :src="grupoJusti" alt="Justina"/>
+                    <button class="button-info" @click="buttonInfo('hola soy justi bla bla bla')">Click para saber más de Justi</button>
+                </div>
+            </div>
     </section>
 
     <section id="que-hacemos" class="section">
@@ -62,11 +78,11 @@ import LogoMain from './assets/logo-inicio.png'
     }
 
     #nosotros, #por-que-contratarnos  {
-        background-color: whitesmoke;
+        background-color: #B4F461;
     }
 
     #contacto, #que-hacemos {
-        background-color: greenyellow;
+        background-color: whitesmoke;
     }
 
     .right {
@@ -112,5 +128,27 @@ import LogoMain from './assets/logo-inicio.png'
         font-size: 1.5rem;
         font-weight: bold;
     }
+
+    .group-facu, .group-justi{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 70px;
+    }
+
+    .button-info{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        font-size: 30px;
+        padding: 10px 20px;
+        
+    }
+
+
+    
+
+    
 
 </style>
